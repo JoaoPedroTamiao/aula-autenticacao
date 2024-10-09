@@ -1,7 +1,6 @@
 import Card from 'react-bootstrap/Card';
 
 function CardPessoa({ pessoa }) {
-
     const estiloParagrafo = {
         fontSize: '1rem',
         fontWeight: 'bold',
@@ -36,19 +35,19 @@ function CardPessoa({ pessoa }) {
                 <Card.Subtitle className="mb-2 text-muted">{pessoa.sobrenome}</Card.Subtitle>
                 <hr />
                 <Card.Text style={estiloAlinhamento}>
-                    <p style={estiloParagrafo}>CPF:</p> 
+                    <span style={estiloParagrafo}>CPF:</span> 
                     <span style={estiloTextoOverflow}>{pessoa.cpf}</span>
                 </Card.Text>
                 <Card.Text style={estiloAlinhamento}>
-                    <p style={estiloParagrafo}>E-mail:</p> 
+                    <span style={estiloParagrafo}>E-mail:</span> 
                     <span style={estiloTextoOverflow}>{pessoa.email}</span>
                 </Card.Text>
                 <Card.Text style={estiloAlinhamento}>
-                    <p style={estiloParagrafo}>Cidade:</p> 
+                    <span style={estiloParagrafo}>Cidade:</span> 
                     <span style={estiloTextoOverflow}>{pessoa.cidade}</span>
                 </Card.Text>
                 <Card.Text style={estiloAlinhamento}>
-                    <p style={estiloParagrafo}>País:</p> 
+                    <span style={estiloParagrafo}>País:</span> 
                     <span style={estiloTextoOverflow}>{pessoa.pais}</span>
                 </Card.Text>
             </Card.Body>
